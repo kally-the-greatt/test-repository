@@ -12,9 +12,7 @@ app.config["SQLALCHEMY_DATABASE_URI"]='sqlite:///cola.db'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=False
 app.secret_key="badguy"
 api=Api(app)
-@app.before_first_request
-def create_table():
-    db.create_all()
+
 jwt=JWT(app,authenticate,identity)
 
 
