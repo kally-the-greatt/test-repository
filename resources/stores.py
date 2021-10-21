@@ -22,4 +22,4 @@ class stores(Resource):
         return {"message":"store has been deleted"}
 class storelist(Resource):
     def get(self):
-        return {"stores":store.json for store in storeModel.query.all()}
+        return {"stores":store.json() for store in storeModel.query.all()}
