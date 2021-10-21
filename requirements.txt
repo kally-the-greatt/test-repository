@@ -3,4 +3,4 @@ FLASK-JWT
 FLASK-RESTful
 FLASK-SQLAlchemy
 uwsgi
-pyscopg2-binary
+pyscopg2-binary==2.9.1
