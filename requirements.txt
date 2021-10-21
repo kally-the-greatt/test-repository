@@ -3,3 +3,4 @@ FLASK-JWT
 FLASK-RESTful
 FLASK-SQLAlchemy
 uwsgi
+pyscopg2
