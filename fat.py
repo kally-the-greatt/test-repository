@@ -8,7 +8,7 @@ from resources.user import Registeruser
 from resources.item import Item,ItemList
 from resources.stores import stores,storelist
 app=Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"]=os.environ.get('DATABASE_URL?sslmode=require','sqlite:///cola.db').replace('postgres://', 'postgresql://')
+app.config["SQLALCHEMY_DATABASE_URI"]=os.environ.get('DATABASE_URL?sslmode=require').replace('postgres://', 'postgresql://')
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=False
 app.secret_key="badguy"
 api=Api(app)
